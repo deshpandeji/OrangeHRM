@@ -1,0 +1,14 @@
+ git status
+
+ git add .
+
+ git status
+
+ git commit -m "Notes about changes"
+
+ git push -m origin master
+
+ 
+
+
+
