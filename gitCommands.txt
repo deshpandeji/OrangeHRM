@@ -6,7 +6,7 @@
 
  git commit -m "Notes about changes"
 
- git push -m origin master
+ git push - origin master
 
  
 
