@@ -1,0 +1,45 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "Automation Project for Learning",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests --skip-js-errors",
+    "test:firefox": "testcafe firefox ./tests",
+    "test:chrome-html": "testcafe chrome ./tests --reporter html:reports/Test_Result.html"
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation",
+    "Testing"
+  ],
+  "author": "Nagesh Deshpande",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "testcafe": "^1.8.4",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "mocha": "^7.2.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
+  },
+  "reporter": "testcafe-reporter-html",
+  "reporterOptions": {
+    "mocha": "^7.2.0",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  }
+}
